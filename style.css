@@ -1,9 +1,16 @@
-:root {
+:root, :root.light {
+  --background: #fff;
+  --foreground: #000;
+  --primary-color: #86ff18;
+  --gray-color: #edebeb;
+  --success-color: #61b752;
+}
+
+:root.dark {
   --background: #080808;
   --foreground: #fff;
-  --gray-color: #262626;
   --primary-color: #D32F2F;
-  --secondary-color: #ababab;
+  --gray-color: #262626;
   --success-color: #61b752;
 }
 
@@ -35,13 +42,31 @@ body {
   padding: 10px 10%;
 }
 
-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  margin: -10px -10%;
+  padding: 20px 10%;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
 }
 
+.navbar.sticky {
+  padding: 10px 10%;
+  background: var(--primary-color);
+}
+
+.navbar.sticky .logo span  {
+  color: var(--foreground);
+}
+.navbar.sticky .theme-btn {
+  color: var(--foreground);
+}
 .logo {
   font-size: 48px;
 }
@@ -50,13 +75,13 @@ nav {
   color: var(--primary-color);
 }
 
-nav ul li {
+.navbar ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
 
-nav ul li a {
+.navbar ul li a {
   color: var(--foreground);
   text-decoration: none;
   font-size: 18px;
@@ -64,7 +89,7 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a::after {
+.navbar ul li a::after {
   content: "";
   width: 0;
   height: 3px;
@@ -75,9 +100,41 @@ nav ul li a::after {
   transition: 0.5s;
 }
 
-nav ul li a:hover:after {
+.navbar ul li a:hover:after {
   width: 100%;
 }
+
+.theme-btn {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+i.theme-btn {
+  font-size: 25px;
+}
+
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: inline-block;
+  animation: animName 2s linear infinite ;
+}
+
+@keyframes animName {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(360deg);
+    }
+ }
+
 
 .header-text {
   margin-top: 20%;
@@ -97,7 +154,6 @@ nav ul li a:hover:after {
 
 #about {
   padding: 80px 0;
-  color: var(--secondary-color);
 }
 
 .row {
@@ -386,7 +442,7 @@ form .btn2 {
 
 /* -------------------------------------------------css for small screen------------------- */
 
-nav .fas {
+.navbar .fas {
     display: none;
 }
 
@@ -404,12 +460,12 @@ nav .fas {
         font-size: 30px;
     }
 
-    nav .fas {
+    .navbar .fas {
         display: block;
         font-size: 25px;
     }
 
-    nav ul {
+    .navbar ul {
         background: var(--primary-color);
         position: fixed;
         top: 0;
@@ -421,12 +477,12 @@ nav .fas {
         transition: right 0.5s;
     }
 
-    nav ul li {
+    .navbar ul li {
         display: block;
         margin: 25px;
     }
 
-    nav ul .fas {
+    .navbar ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;

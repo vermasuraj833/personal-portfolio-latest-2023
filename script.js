@@ -14,7 +14,7 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-// ---------------------------------------sidemenu----------------------------------
+// ---------------------------------------sidemenu-for mobile---------------------------------
 
 var sidemenu = document.getElementById("sidemenu");
 
@@ -44,4 +44,29 @@ form.addEventListener("submit", (e) => {
       form.reset();
     })
     .catch((error) => console.error("Error!", error.message));
+});
+
+// -------------------------------------------theme -----------------------
+
+const setTheme = (theme) => (document.documentElement.className = theme);
+
+// -------------------------------------------menubar ------------------------------
+
+var navbar = document.getElementById("navbar");
+var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+window.addEventListener("scroll", function () {
+
+  if (this.scrollY > 20) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove("sticky");
+  }
+
+  // scroll-up button show/hide script
+  if (this.scrollY > 500) {
+    scrollUpBtn.classList.add("show");
+  } else {
+    scrollUpBtn.classList.remove("show");
+  }
 });
