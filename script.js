@@ -50,23 +50,32 @@ form.addEventListener("submit", (e) => {
 
 const setTheme = (theme) => (document.documentElement.className = theme);
 
-// -------------------------------------------menubar ------------------------------
+// -------------------------------------------menubar desktop and top button------------------------------
 
-var navbar = document.getElementById("navbar");
-var scrollUpBtn = document.getElementById("scrollUpBtn");
+var navbar = document.querySelector(".navbar");
+var button = document.querySelector('#button');
 
-window.addEventListener("scroll", function () {
+const displayButton = () => {
+  window.addEventListener('scroll', () => {  
+    if (window.scrollY > 100) {
+      navbar.classList.add('sticky');
+      button.classList.add('show');
+    } else {
+      navbar.classList.remove("sticky");
+      button.classList.remove('show');
+    }
+  });
+};
 
-  if (this.scrollY > 20) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove("sticky");
-  }
+const scrollToTop = () => {
+  button.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    }); 
+  });
+};
 
-  // scroll-up button show/hide script
-  if (this.scrollY > 500) {
-    scrollUpBtn.classList.add("show");
-  } else {
-    scrollUpBtn.classList.remove("show");
-  }
-});
+displayButton();
+scrollToTop();

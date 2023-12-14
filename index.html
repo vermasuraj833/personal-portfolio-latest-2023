@@ -12,6 +12,7 @@
     ></script>
   </head>
   <body>
+    <a id="button"></a>
     <div id="header">
       <div class="container">
         <nav class="navbar" id="navbar">
@@ -24,20 +25,22 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
-            <i
-              class="fa-regular fa-sun theme-btn light"
-              class=""
-              onclick="setTheme('light')"
-              title="Light Theme"
-            ></i>
-            <i
-              class="fa-regular fa-moon theme-btn dark"
-              class=""
-              onclick="setTheme('dark')"
-              title="Dark Theme"
-            ></i>
           </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
+          <div>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <i
+                class="fa-regular fa-sun theme-btn light"
+                class=""
+                onclick="setTheme('light')"
+                title="Light Theme"
+              ></i>
+              <i
+                class="fa-regular fa-moon theme-btn dark"
+                class=""
+                onclick="setTheme('dark')"
+                title="Dark Theme"
+              ></i>
+          </div>
         </nav>
         <div class="header-text">
           <p>UI Developer</p>
@@ -55,7 +58,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/about-us2.jpg" alt="user" />
+            <img src="images/about-me.png" alt="user" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -219,7 +222,7 @@
               </p>
               <a
                 href="https://vermasuraj833.github.io/exit-popup-app-javascript/"
-                target="blank"
+                target="_blank"
               >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
@@ -236,7 +239,7 @@
               </p>
               <a
                 href="https://vermasuraj833.github.io/website-for-restaurants-bootstrap/"
-                target="blank"
+                target="_blank"
               >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
