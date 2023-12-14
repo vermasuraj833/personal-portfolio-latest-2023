@@ -1,254 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a760e9a234.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <a id="button"></a>
-    <div id="header">
-      <div class="container">
-        <nav class="navbar" id="navbar">
-          <!-- <img src="images/logo.png" alt="logo" class="logo" /> -->
-          <a href="#header" class="logo"><span>S</span>uraj.</a>
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <div>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-            <i
-                class="fa-regular fa-sun theme-btn light"
-                class=""
-                onclick="setTheme('light')"
-                title="Light Theme"
-              ></i>
-              <i
-                class="fa-regular fa-moon theme-btn dark"
-                class=""
-                onclick="setTheme('dark')"
-                title="Dark Theme"
-              ></i>
-          </div>
-        </nav>
-        <div class="header-text">
-          <p>UI Developer</p>
-          <h1>
-            Hi, I'am <span>Suraj</span> <br />
-            Verma from India
-          </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a760e9a234.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <a id="button"></a>
+  <div id="header">
+    <div class="container">
+      <nav class="navbar" id="navbar">
+        <!-- <img src="images/logo.png" alt="logo" class="logo" /> -->
+        <a href="#header" class="logo"><span>S</span>uraj.</a>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <div>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+          <i class="fa-regular fa-sun theme-btn light" class="" onclick="setTheme('light')" title="Light Theme"></i>
+          <i class="fa-regular fa-moon theme-btn dark" class="" onclick="setTheme('dark')" title="Dark Theme"></i>
         </div>
+      </nav>
+      <div class="header-text">
+        <p>UI Developer</p>
+        <h1>
+          Hi, I'am <span>Suraj</span> <br />
+          Verma from India
+        </h1>
       </div>
     </div>
+  </div>
 
-    <!-- -----------------------about---------------------------------------- -->
+  <!-- -----------------------about---------------------------------------- -->
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/about-me.png" alt="user" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Bachelor of Commerce graduate and creative user interface (UI)
-              Developer with 7 years facilitating and supporting human
-              interactions with complex systems and software. Some relevant
-              hands on 7 years experience on HTML5, CSS3, 5 years experience on
-              SCSS, and Bootstrap 4 & 5, 3 years experience on JavaScript, and
-              jQuery, 1 year experience on ES6, and ReactJS, Typescript, Angular
-              v8 and v12, 1 year experience on CSS Methodology (BEM),
-              Materialize, 1 year experience on Figma and Adobe XD, 6 Months
-              experience on Adobe Experience Manager in User Interface (UI).
-              Knowledge of transporting data such as XML and JSON. Knowledge of
-              others tools such as Jira, Github, Bitbucket, Azure Devops and
-              Visual Studio Code. Experience on projects in eLearning domain, UI
-              development startups. Having Core competency in Design &
-              Development in eLearning and IT Sector domain. Worked as Project
-              Lead and Manager with extensive experience on development of
-              packaged products. Teaming and collaboration: Specialize in
-              creating crossfunctional, crossorganizational teams with the
-              customer to identify, prioritize, and design solutions for
-              business requirements.
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about-me.png" alt="user" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Bachelor of Commerce graduate and creative user interface (UI)
+            Developer with 7 years facilitating and supporting human
+            interactions with complex systems and software. Some relevant
+            hands on 7 years experience on HTML5, CSS3, 5 years experience on
+            SCSS, and Bootstrap 4 & 5, 3 years experience on JavaScript, and
+            jQuery, 1 year experience on ES6, and ReactJS, Typescript, Angular
+            v8 and v12, 1 year experience on CSS Methodology (BEM),
+            Materialize, 1 year experience on Figma and Adobe XD, 6 Months
+            experience on Adobe Experience Manager in User Interface (UI).
+            Knowledge of transporting data such as XML and JSON. Knowledge of
+            others tools such as Jira, Github, Bitbucket, Azure Devops and
+            Visual Studio Code. Experience on projects in eLearning domain, UI
+            development startups. Having Core competency in Design &
+            Development in eLearning and IT Sector domain. Worked as Project
+            Lead and Manager with extensive experience on development of
+            packaged products. Teaming and collaboration: Specialize in
+            creating crossfunctional, crossorganizational teams with the
+            customer to identify, prioritize, and design solutions for
+            business requirements.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
             </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>UI Designer</span><br />Designing Web/App Interface
-                </li>
-                <li>
-                  <span>UI Developer</span><br />
-                  UI Web/App Development
-                </li>
-                <li>
-                  <span>Front End Developer</span><br />Web/App Application
-                  Development
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2023 - Corrent</span><br />Front End Developer at Tech
-                  Mahindra
-                </li>
-                <li>
-                  <span>2022 - 2023</span><br />KK Consuting at Product UI
-                  Developer
-                </li>
-                <li>
-                  <span>2019 - 2022</span><br />V2 Solutions at UI Developer
-                </li>
-                <li>
-                  <span>2016 - 2019</span><br />MRCC Solutions at Jr. Media
-                  Developer
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2013</span><br />Bachelor of Commerce from Mumbai</li>
-                <li>
-                  <span>2010</span><br />Higher Secondary School (HSC) from
-                  Mumbai
-                </li>
-                <li>
-                  <span>App Developement</span><br />Secondary School
-                  Certificate (SSC) from Mumbai
-                </li>
-              </ul>
-            </div>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>UI Designer</span><br />Designing Web/App Interface
+              </li>
+              <li>
+                <span>UI Developer</span><br />
+                UI Web/App Development
+              </li>
+              <li>
+                <span>Front End Developer</span><br />Web/App Application
+                Development
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>2023 - Corrent</span><br />Front End Developer at Tech
+                Mahindra
+              </li>
+              <li>
+                <span>2022 - 2023</span><br />KK Consuting at Product UI
+                Developer
+              </li>
+              <li>
+                <span>2019 - 2022</span><br />V2 Solutions at UI Developer
+              </li>
+              <li>
+                <span>2016 - 2019</span><br />MRCC Solutions at Jr. Media
+                Developer
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2013</span><br />Bachelor of Commerce from Mumbai</li>
+              <li>
+                <span>2010</span><br />Higher Secondary School (HSC) from
+                Mumbai
+              </li>
+              <li>
+                <span>App Developement</span><br />Secondary School
+                Certificate (SSC) from Mumbai
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- -------------------------------------------services--------------------------------- -->
+  <!-- -------------------------------------------services--------------------------------- -->
 
-    <div class="" id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI Designer</h2>
-            <p>
-              Designed and developed standards-based and prototypes. Interacted
-              with clients to gather requirements of projects spanning from
-              enterprise applications to web interfaces. Collaborated with the
-              creative head and senior developers during the design and
-              development phases of projects. Used software such as Adobe XD,
-              Figma, and Photoshop to create wireframes, prototypes and visually
-              rich designs. Designed to frame problems and take ideas from
-              ideation through implementation. Rung from strategy and experience
-              concepts to detailed design systems and assets. Worked closely
-              with developers to deliver a polished final product.
-            </p>
-            <a href="javascript:void(0)">Leran More</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>UI Developer</h2>
-            <p>
-              Create HTML5 Page as per Client’s requirement. Responsive Layout
-              Development using HTML5, CSS3, JQuery, XML, JSON and Wordpress of
-              existing application. Updating of existing none responsive HTML
-              application to responsiveness. Landing pages for existing clients.
-              Create templates for various activities. Development of HTML page
-              bases on templates with content provided Maintain consistency in
-              design and layout. Maintained excellent attendance record,
-              consistently arriving to work on time. Resolved Project Related
-              problems, improved operations and provided exceptional client
-              support.
-            </p>
-            <a href="javascript:void(0)">Leran More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>Front End Developer</h2>
-            <p>
-              Developed Web/App Application UIs via emerging Front End
-              Technologies such as HTML5, CSS3, SCSS, Bootstrap 5, JavaScript,
-              jQuery, ES6, ReactJS, TypeScript, and Angular, Angular Material.
-              Developed landing pages, dashboards and online applications using
-              jQuery and JavaScript. Completed full redesigns of existing
-              websites to improve navigation, enhance visuals and strengthen
-              search engine rankings.
-            </p>
-            <a href="javascript:void(0)">Leran More</a>
-          </div>
+  <div class="" id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>UI Designer</h2>
+          <p>
+            Designed and developed standards-based and prototypes. Interacted
+            with clients to gather requirements of projects spanning from
+            enterprise applications to web interfaces. Collaborated with the
+            creative head and senior developers during the design and
+            development phases of projects. Used software such as Adobe XD,
+            Figma, and Photoshop to create wireframes, prototypes and visually
+            rich designs. Designed to frame problems and take ideas from
+            ideation through implementation. Rung from strategy and experience
+            concepts to detailed design systems and assets. Worked closely
+            with developers to deliver a polished final product.
+          </p>
+          <a href="javascript:void(0)">Leran More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI Developer</h2>
+          <p>
+            Create HTML5 Page as per Client’s requirement. Responsive Layout
+            Development using HTML5, CSS3, JQuery, XML, JSON and Wordpress of
+            existing application. Updating of existing none responsive HTML
+            application to responsiveness. Landing pages for existing clients.
+            Create templates for various activities. Development of HTML page
+            bases on templates with content provided Maintain consistency in
+            design and layout. Maintained excellent attendance record,
+            consistently arriving to work on time. Resolved Project Related
+            problems, improved operations and provided exceptional client
+            support.
+          </p>
+          <a href="javascript:void(0)">Leran More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Front End Developer</h2>
+          <p>
+            Developed Web/App Application UIs via emerging Front End
+            Technologies such as HTML5, CSS3, SCSS, Bootstrap 5, JavaScript,
+            jQuery, ES6, ReactJS, TypeScript, and Angular, Angular Material.
+            Developed landing pages, dashboards and online applications using
+            jQuery and JavaScript. Completed full redesigns of existing
+            websites to improve navigation, enhance visuals and strengthen
+            search engine rankings.
+          </p>
+          <a href="javascript:void(0)">Leran More</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- -------------------------------------------portfolio--------------------------- -->
+  <!-- -------------------------------------------portfolio--------------------------- -->
 
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
 
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="work" />
-            <div class="layer">
-              <h3>Exit Popup App</h3>
-              <p>
-                This application fully developed using vanilla JavaScript using
-                HTML and CSS Technologies. Application main focusing on user
-                validate given input form with storing cookies. Its working on
-                any website.
-              </p>
-              <a
-                href="https://vermasuraj833.github.io/exit-popup-app-javascript/"
-                target="_blank"
-              >
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="work" />
+          <div class="layer">
+            <h3>Exit Popup App</h3>
+            <p>
+              This application fully developed using vanilla JavaScript using
+              HTML and CSS Technologies. Application main focusing on user
+              validate given input form with storing cookies. Its working on
+              any website.
+            </p>
+            <a href="https://vermasuraj833.github.io/exit-popup-app-javascript/" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
           </div>
-          <div class="work">
-            <img src="images/work-2.png" alt="work" />
-            <div class="layer">
-              <h3>Website Design for Restaurants</h3>
-              <p>
-                It's static web page design using Technologies HTML, CSS,
-                Bootstrap 5 and Jquery. Only main purpose of creating this
-                website for store all the internal information in restaurant.
-              </p>
-              <a
-                href="https://vermasuraj833.github.io/website-for-restaurants-bootstrap/"
-                target="_blank"
-              >
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="work" />
+          <div class="layer">
+            <h3>Website Design for Restaurants</h3>
+            <p>
+              It's static web page design using Technologies HTML, CSS,
+              Bootstrap 5 and Jquery. Only main purpose of creating this
+              website for store all the internal information in restaurant.
+            </p>
+            <a href="https://vermasuraj833.github.io/website-for-restaurants-bootstrap/" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
           </div>
-          <div class="work">
-            <img src="images/work-3.png" alt="work" />
-            <div class="layer">
-              <!-- <h3>Online Shop App</h3>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="work" />
+          <div class="layer">
+            <!-- <h3>Online Shop App</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                 numquam adipisci cum. Eos, adipisci,
@@ -256,69 +240,56 @@
               <a href="javascript:void(0)">
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a> -->
-              <h1 class="">Comming Soon</h1>
-            </div>
-          </div>
-        </div>
-        <a href="javascript:void(0)" class="btn">See More</a>
-      </div>
-    </div>
-
-    <!-- -----------------------------------------contact----------------------------- -->
-
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-regular fa-paper-plane"></i> v.ch.suraj1991@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i> +91 8454014298</p>
-            <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/in/suraj-verma-8498b4142/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin-in"></i></i
-              ></a>
-              <a href="https://twitter.com/SURAJVERMA88603" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.facebook.com/surajverma4266" target="_blank"
-                ><i class="fa-brands fa-facebook-f"></i></i
-              ></a>
-              <a href="https://in.pinterest.com/vchsuraj1991/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
-            </div>
-            <a href="images/Suraj_Verma_01.pdf" download class="btn btn2"
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+            <h1 class="">Comming Soon</h1>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>
-          Copyright &copy; Suraj. Made with <i class="fa-solid fa-heart"></i> by
-          Easy Tutorials
-        </p>
+      <a href="javascript:void(0)" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- -----------------------------------------contact----------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-regular fa-paper-plane"></i> v.ch.suraj1991@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +91 8454014298</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/suraj-verma-8498b4142/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="https://twitter.com/SURAJVERMA88603" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/surajverma4266" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="https://in.pinterest.com/vchsuraj1991/" target="_blank"><i
+                class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+          <a href="images/Suraj_Verma_01.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
       </div>
     </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; Suraj. Made with <i class="fa-solid fa-heart"></i> by
+        Easy Tutorials
+      </p>
+    </div>
+  </div>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
