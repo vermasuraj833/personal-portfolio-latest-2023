@@ -52,7 +52,7 @@ body {
   position: fixed;
   width: 100%;
   margin: -10px -10%;
-  padding: 20px 10%;
+  padding: 10px 10%;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
   z-index: 1;
@@ -60,6 +60,9 @@ body {
 
 .logo {
   font-size: 48px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .logo span {
@@ -127,7 +130,7 @@ i.theme-btn {
 }
 
 .navbar.sticky {
-  padding: 10px 10%;
+  padding: 5px 10%;
   background: var(--primary-color);
 }
 
@@ -140,7 +143,7 @@ i.theme-btn {
 }
 
 .navbar.sticky ul li a::after {
-  background: var(--background) ;
+  background: var(--background);
 }
 
 @keyframes animName {
@@ -463,8 +466,8 @@ form .btn2 {
 
 /* -------------------------------------------------css for small screen------------------- */
 
-
-.navbar div .fas, .navbar ul .fas {
+.navbar div .fas,
+.navbar ul .fas {
   display: none;
 }
 
@@ -489,7 +492,8 @@ form .btn2 {
     gap: 30px;
   }
 
-  .navbar div .fas, .navbar ul .fas {
+  .navbar div .fas,
+  .navbar ul .fas {
     display: block;
     font-size: 25px;
     cursor: pointer;
@@ -574,7 +578,8 @@ form .btn2 {
   z-index: 1;
 }
 
-#button:hover, #button:active {
+#button:hover,
+#button:active {
   cursor: pointer;
   background: var(--foreground);
 }
@@ -589,7 +594,8 @@ form .btn2 {
   color: var(--foreground);
 }
 
-#button:hover:after, #button:active:after {
+#button:hover:after,
+#button:active:after {
   color: var(--primary-color);
 }
 
